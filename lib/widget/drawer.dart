@@ -11,8 +11,8 @@ class MyDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // ignore: prefer_const_declarations
-    final Imageurl =
-        "https://scontent.fblr22-1.fna.fbcdn.net/v/t39.30808-6/219585930_4302148243183997_1136725343579564325_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=e3f864&_nc_ohc=cAkK66QVqlMAX8bmTch&_nc_ht=scontent.fblr22-1.fna&oh=00_AT9UAE9-xi-x62-pKVR4kkVgPADr5dDDjDGg8pxCNxWP_w&oe=6355095F";
+   // final Imageurl =
+     //   "https://www.google.com/imgres?imgurl=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F002%2F002%2F257%2Foriginal%2Fbeautiful-woman-avatar-character-icon-free-vector.jpg&imgrefurl=https%3A%2F%2Fwww.vecteezy.com%2Ffree-vector%2Fwoman-avatar&tbnid=uIe5oF4gqyH1JM&vet=12ahUKEwjszrDgzYr7AhWV83MBHeZvDXAQMygBegUIARDTAQ..i&docid=f1cbKhpiGfpm5M&w=7973&h=7973&q=avatar%20image&ved=2ahUKEwjszrDgzYr7AhWV83MBHeZvDXAQMygBegUIARDTAQ";
     return Drawer(
       child: Container(
         color: Colors.blue,
@@ -25,9 +25,10 @@ class MyDrawer extends StatelessWidget {
                       margin: EdgeInsets.zero,
                       accountName: Text("Vinaya Natekar"),
                       accountEmail: Text("vinayanatekar@gmail.com"),
-                      currentAccountPicture: CircleAvatar(
-                        backgroundImage: NetworkImage(Imageurl),
-                      ))),
+                     // currentAccountPicture: CircleAvatar(
+                      //  backgroundImage: NetworkImage(Imageurl),
+                      //)
+                      )),
               ListTile(
                 onTap: () async {
                   await Navigator.pushNamed(context, MyRoutes.homeRoute);
