@@ -1,3 +1,4 @@
+import 'package:day1/pages/gridview.dart';
 import 'package:day1/pages/home_page.dart';
 import 'package:day1/pages/login.dart';
 import 'package:day1/pages/text.dart';
@@ -26,7 +27,8 @@ class Myapp extends StatelessWidget {
         MyRoutes.loginRoute: (context) => const Loginpage(),
         MyRoutes.homeRoute: (context) => const Homepage(),
         MyRoutes.textRoute: (context) => const TextWidget(),
-        MyRoutes.buttonRoute: (context) => const ButtonApp()
+        MyRoutes.buttonRoute: (context) => const ButtonApp(),
+        MyRoutes.gridviewRoute:(context) => const MygridWidget()
       },
     );
   }

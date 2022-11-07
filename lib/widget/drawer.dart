@@ -73,6 +73,18 @@ class MyDrawer extends StatelessWidget {
                   textScaleFactor: 1.2,
                   style: TextStyle(color: Colors.white),
                 ),
+              ),
+             ListTile(
+                onTap: () async {
+                  await Navigator.pushNamed(context, MyRoutes.gridviewRoute);
+                },
+                leading: Icon(CupertinoIcons.list_bullet_below_rectangle,
+                    color: Colors.white),
+                title: Text(
+                  "Productgridview",
+                  textScaleFactor: 1.2,
+                  style: TextStyle(color: Colors.white),
+                ),
               )
             ]),
       ),
